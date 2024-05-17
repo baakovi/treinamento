@@ -8,6 +8,8 @@
         $result = "Funcionou";
     }
 
+    $alt = "Alterações";
+
 ?>
 
 <!DOCTYPE html>
