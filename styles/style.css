@@ -178,8 +178,18 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 70px;
-  margin-bottom: -5px;
+  margin: 50px;
+  margin-bottom: 5px;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+}
+
+.form-control {
+  padding: 0 40px;
 }
 
 h1 {
@@ -194,7 +204,7 @@ h1 {
   line-height: 12px;
   color: #464650 ;
   text-align: center;
-  margin: 5px 0 20px;
+  margin: 15px 0 20px;
 }
 
 .sub-subtitulo {
@@ -203,6 +213,7 @@ h1 {
   line-height: 20px;
   color: #676772;
   width: 60%;
+  margin: 20px;
 }
 
 .header {
@@ -218,20 +229,31 @@ html {
   width: 100vw;
   background:  0059aa;
   font-family: sans-serif;
+}
 
+.input-text {
+  font-size: 14px;
+}
+
+.result-input {
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .card-body {
   background-color: white;
   padding-right: 50px;
-  height: 250px;
+  height: 450px;
   width: 600px;
   border-radius: 10px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, .1);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px 0 70 70px 0;
+  flex-direction: column;
+  margin: 40px 0 60px;
 }
 
 .card-body.active {
@@ -274,7 +296,7 @@ html {
   font-size: 50px;
 }
 
-.card-body .form input {
+.card-body input, .sex select {
   background-color: transparent;
   width: 100%;
   outline: none;
@@ -283,18 +305,18 @@ html {
   border: none;
   border: 0.5px solid rgb(177, 177, 177);
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 
-.card-form .form input::placeholder{
-  padding-left: .5rem;
+.card-form input::placeholder{
   color: grey;
 }
 
-.card-body .form  button {
-  width: 50%;
-  height: 50px;
+.card-body .button-click {
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
   background-color: var(--azul);
   outline: none;
   border: none;
@@ -302,16 +324,15 @@ html {
   color: #eee;
   cursor: pointer;
   box-shadow:3px 3px 7px 1px #ccc;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .novo{
-  margin-right: -115px;
   border-radius: 10px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px;
   height: 40px;
   width: 150px;
   text-align: center;
@@ -320,9 +341,7 @@ html {
   background-color: var(--azul);
   color: white;
   text-decoration: none;
-  display: none;
 }
-
 
 .wrapper .qr-code {
   display: none;
