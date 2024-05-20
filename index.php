@@ -154,7 +154,7 @@
                 <div class="instructions">
                     <div class="age">
                         <label for="age" class="input-text">Digite sua idade:</label>
-                        <input type="number" min="12" max="100" name="age" placeholder="" required>
+                        <input type="number" min="13" max="100" name="age" placeholder="" required>
                     </div>
 
                     <div class="sex">
