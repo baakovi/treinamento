@@ -31,7 +31,7 @@
 <h3>Output dos Resultados: </h3>
 <p>| Após o usuário inserir suas informações.</p>
 
-<img src="" alt="Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
+<img src="./assets/template/prototipo-1.png" alt="Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
 
 <br>
 
