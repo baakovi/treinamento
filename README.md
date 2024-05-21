@@ -26,4 +26,21 @@
 
 <h2>Template</h2>
 
+<img src="./assets/template/pagina-index.png" alt="Página index do cáculo de VO2 Máximo">
+
+<h3>Output dos Resultados: 
+<br>
+| Após o usuário inserir suas informações.
+
+<img src="" alt="Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
+
+<br>
+
+<h2>Tecnologias Utilizadas</h2>
+
+<img src ="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+<img src ="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+<img src ="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+<img src ="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+
 </div>

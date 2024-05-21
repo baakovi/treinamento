@@ -1,29 +1,6 @@
 <?php
 
-    if (empty($_POST['age']) && empty($_POST['gender']) && empty($_POST['meters'])) {
-        $result = "Resultado aqui!";
-    }
-
-    if (isset($_POST['submit']) && !empty($_POST['age']) && !empty($_POST['gender']) && !empty($_POST['meters'])) {
-        $name = $_POST['gender'];
-        $meters = $_POST['meters'];
-        $result = $_POST['result'];
-    
-        $calc = ($meters - 504.1) / 44.9;
-    
-        $result = number_format($calc, 2);
-        $resultInput = "";
-
-        // if ($result > 2 && $result < 5) {
-        //     $resultInput = "Péssimo";
-        // }
-        // if ($result > 5 && $name === "fem") {
-        //     $resultInput = "Bom mulher";
-        // }
-        // if ($result > 5 && $name === "masc") {
-        //     $resultInput = "Bom homem";
-        // }
-    }
+    include_once "./function/process.php";
 
 ?>
 
@@ -35,18 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css">
+
     <title>Cálculo VO2 Máximo</title>
+
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_ecliente.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/cac5e94aa0.js" crossorigin="anonymous"></script>
-
-    <script>
-        function reloadPage(){
-            window.location.assign('index.php');
-        } 
-    </script>
 </head>
 
 <body class="wrapper"> 
@@ -77,7 +51,7 @@
             </div>
         </div>
         <div class="container">
-            <a href="./index.html" class="logoecliente">
+            <a href="./index.php" class="logoecliente">
                 <img src="assets/img/logo_ecliente-full.png" alt="Logo ePanel">
             </a>
     
@@ -86,7 +60,7 @@
             </a>
             <nav class="menu" id="btnMenu">
                 <a href="#" onclick="fecharMenu()">&times; Fechar</a>
-                <a href="index.html">
+                <a href="index.php">
                     <i class="fa-solid fa-qrcode"></i>Gerador de QR Code
                 </a>
                 <a href="https://ecliente5.com.br/gerador-qr-code/index.html" target="_blank">
@@ -125,17 +99,17 @@
             </p>
         </section>
 
+        <p class="result-input"><?= $resultOutput; ?></p>
         <section class="card-body">
 
             <div class="container-top">
                 <div class="setorresult">
                     <div class="result">
-                        <p class="result-input"><?= $resultInput; ?></p>
 
                         <input 
                         class="form-control"
                         id="displayresult"
-                        placeholder="<?= $result ?>"
+                        placeholder="<?php echo (!isset($_POST)) ? $beforeOutput : $output; ?>"
                         name="result"
                         autocomplete="off"
                         readonly>
@@ -158,17 +132,17 @@
                     </div>
 
                     <div class="sex">
-                        <label for="sex" class="input-text">Digite seu gênero:</label>
+                        <label for="gender" class="input-text">Digite seu gênero:</label>
                         <select name="gender" id="gender" required>
                             <option value=""></option>
-                            <option value="fem">Feminino</option>
-                            <option value="masc">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
                         </select>
                     </div>
 
                     <div class="meters">
                         <label for="meters" class="input-text">Digite a quantidade de metros percorridos</label>
-                        <input type="number" name="meters" placeholder="" required>
+                        <input type="number" name="meters" required>
                     </div>
                 </div>
 

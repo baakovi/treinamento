@@ -1,5 +1,7 @@
 <?php 
 
+    // Inutilizado
+
     // Tabela para consulta do sistema
     function calcularVO2Max($distancia, $idade, $genero) {
         $vo2max = ($distancia - 504.1) / 44.9;
