@@ -109,7 +109,7 @@
                         <input 
                         class="form-control"
                         id="displayresult"
-                        placeholder="<?php echo (!isset($_POST)) ? $beforeOutput : $output; ?>"
+                        placeholder="<?= $output; ?>"
                         name="result"
                         autocomplete="off"
                         readonly>
