@@ -28,9 +28,9 @@
 
 <img src="./assets/template/pagina-index.png" alt="Página index do cáculo de VO2 Máximo">
 
-<h3>Output dos Resultados: 
+<h3>Output dos Resultados: </h3>
 <br>
-| Após o usuário inserir suas informações.
+<p>| Após o usuário inserir suas informações.</p>
 
 <img src="" alt="Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
 
