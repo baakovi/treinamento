@@ -1,9 +1,3 @@
-<?php
-
-    include_once "./function/process.php";
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/cac5e94aa0.js" crossorigin="anonymous"></script>
 </head>
@@ -91,7 +86,7 @@
                 <br>
                 <b>3° -</b> Após a corrida, digite a distância percorrida (em metros) no campo abaixo.
                 <br>
-                <b>4° -</b> Exemplo: <i>Se você correu 2,5km você deve digitar 2500.</i>
+                <b>4° -</b> Exemplo: Se você correu 2,5km você deve digitar 2500.
                 <br>
                 <b>5° -</b> Após apertar o botão "Enviar", vamos indicar qual o treino ideal para você estar realizando de acordo com seu resultado.
                 <br>
@@ -99,7 +94,7 @@
             </p>
         </section>
 
-        <p class="result-input"><?= $resultOutput; ?></p>
+        <p class="result-input" id="result-input"></p>
         <section class="card-body">
 
             <div class="container-top">
@@ -109,9 +104,8 @@
                         <input 
                         class="form-control"
                         id="displayresult"
-                        placeholder="<?= $output; ?>"
+                        placeholder="Resultado aqui!"
                         name="result"
-                        autocomplete="off"
                         readonly>
                     </div>
                 </div>
@@ -123,12 +117,12 @@
                 </div>
             </div>
 
-            <form action="" method="POST" class="header-form">    
+            <form id="form-get" action="" method="GET" class="header-form">    
 
                 <div class="instructions">
                     <div class="age">
                         <label for="age" class="input-text">Digite sua idade:</label>
-                        <input type="number" min="13" max="100" name="age" placeholder="" required>
+                        <input type="number" min="13" max="113" name="age" placeholder="" required>
                     </div>
 
                     <div class="sex">
@@ -142,12 +136,15 @@
 
                     <div class="meters">
                         <label for="meters" class="input-text">Digite a quantidade de metros percorridos</label>
-                        <input type="number" name="meters" required>
+                        <input type="number" name="meters">
                     </div>
                 </div>
 
                 <div class="button-instruction">
-                    <button type="submit" name="submit" class="novo">
+                    <button 
+                        type="submit" 
+                        name="submit" 
+                        class="novo">
                         Enviar
                     </button>
                 </div>
@@ -156,6 +153,7 @@
 
         </section>
     </main>
-        <script src="./scripts/script.js"></script>             
+    
+    <script src="./scripts/script.js"></script>             
 </body>
 </html>
