@@ -70,6 +70,12 @@
 
 <br>
 
+<h3>json_encode</h3>
+
+<p>Retorna uma string contendo a representação JSON de value fornecido, transformando um valor em formato JSON. Os arrays não aceitam caracteres especiais, como acentos ou cedilha, tendo problemas de formatação de código caso deseje utilizá-los.</p>
+
+<br>
+
 <h3>Experiência</h3>
 
 - Usei pela primeira vez uma requisição AJAX para obter os resultados do cálculo VO2 Máx e o rendimento do usuário após inserir as informações necessárias no formulário.

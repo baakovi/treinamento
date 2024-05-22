@@ -1,7 +1,5 @@
 <?php
 
-    $output = "Resultado aqui!";
-
     if (isset($_GET) && $_SERVER["REQUEST_METHOD"] == "GET") {
         $genderValue = $_GET['gender'];
         $ageValue = (int)$_GET['age'];
@@ -16,7 +14,7 @@
             exit;
         }
 
-        $output = "{$result}, distância: {$distanceMeter}m";
+        $output = $result;
 
         function classify($ageValue, $distanceMeter, $genderValue) {
 
