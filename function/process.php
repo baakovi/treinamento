@@ -3,7 +3,7 @@
     if (isset($_GET) && $_SERVER["REQUEST_METHOD"] == "GET") {
         $genderValue = $_GET['gender'];
         $ageValue = (int)$_GET['age'];
-        $distanceMeter = isset($_GET['meters']) ? (float)$_GET['meters'] : null;
+        $distanceMeter = (float)$_GET['meters'];
 
         if ($distanceMeter) {
             $vo2max = ($distanceMeter - 504.1) / 44.9;
