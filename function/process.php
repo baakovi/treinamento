@@ -10,7 +10,7 @@
             $result = number_format($vo2max, 2);
         }
         else {
-            echo json_encode("Por favor, insira uma distância");
+            echo "Por favor, insira uma distância";
             exit;
         }
 
