@@ -212,6 +212,10 @@
 
         }
 
+        function classifyLoop($ageValue, $distanceMeter, $genderValue) {
+            exit;
+        }
+
         $category = 
             classify($ageValue, 
                     $distanceMeter, 
