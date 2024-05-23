@@ -72,7 +72,7 @@
 
 <h3>json_encode</h3>
 
-<p>Retorna uma string contendo a representação JSON de value fornecido, transformando um valor em formato JSON. Os arrays não aceitam caracteres especiais, como acentos ou cedilha, tendo problemas de formatação de código caso deseje utilizá-los.</p>
+<p>Retorna uma string contendo a representação JSON de value fornecido, transformando um valor em formato JSON. Os arrays não aceitam caracteres especiais, como acentos ou cedilha, tendo problemas de formatação de código caso deseje utilizá-los. Sempre que precisar transformar dados em uma string de texto JSON para enviar ou guardar, pode-se usar o <code>json_encode</code>.</p>
 
 <br>
 
