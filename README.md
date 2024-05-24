@@ -76,6 +76,12 @@
 
 <br>
 
+<h3>PHP Foreach</h3>
+
+<p>Forma de iterar sobre matrizes (<i>arrays</i>), percorrendo sobrea a array. Funciona apenas com arrays e objetos, retornando um erro quando utilizado com outros tipos de expressões. </p>
+
+<br>
+
 <h3>Experiência</h3>
 
 - Usei pela primeira vez uma requisição AJAX para obter os resultados do cálculo VO2 Máx e o rendimento do usuário após inserir as informações necessárias no formulário.
@@ -83,6 +89,8 @@
 - Refatoração de código e uso de variáveis com strings para evitar o desperdício.
   
 - Primeiro projeto usando o modelo da empresa onde estou fazendo estágio.
+
+- Refatoração de código, diminuindo os `if-else` para um modelo de loop em PHP, usando o `foreach`.
 
 <br>
 
