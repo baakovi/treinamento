@@ -15,7 +15,7 @@ document.getElementById('form-get').addEventListener('submit', (e) => {
     let gender = document.querySelector('[name="gender"]').value;
     let meters = document.querySelector('[name="meters"]').value;
 
-    fetch(`function/process.loop.php?age=${age}&gender=${gender}&meters=${meters}`)
+    fetch(`function/loop.process.php?age=${age}&gender=${gender}&meters=${meters}`)
     .then(response => response.json())
     .then(result => {
         document.getElementById('displayresult').value = result.resultVO2;

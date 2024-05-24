@@ -48,6 +48,18 @@
 
 <br>
 
+<h3>Experiência</h3>
+
+- Usei pela primeira vez uma requisição AJAX para obter os resultados do cálculo VO2 Máx e o rendimento do usuário após inserir as informações necessárias no formulário.
+
+- Refatoração de código e uso de variáveis com strings para evitar o desperdício.
+  
+- Primeiro projeto usando o modelo da empresa onde estou fazendo estágio.
+
+- Refatoração de código, diminuindo os `if-else` para um modelo de loop em PHP, usando o `foreach`.
+
+<br>
+
 <h2>Estudos e Anotações</h2>
 
 <h3><i>O que é o Ajax?</i></h3>
@@ -78,19 +90,15 @@
 
 <h3>PHP Foreach</h3>
 
-<p>Forma de iterar sobre matrizes (<i>arrays</i>), percorrendo sobrea a array. Funciona apenas com arrays e objetos, retornando um erro quando utilizado com outros tipos de expressões. </p>
+<p>Forma de iterar sobre matrizes (<i>arrays</i>), percorrendo sobrea a array. Funciona apenas com arrays e objetos, retornando um erro quando utilizado com outros tipos de expressões. A cada elemento de uma array, executa um bloco de ações definidas.</p>
 
-<br>
+<p><b>O que é uma array?</b> No PHP, é um mapa ordenado, um tipo que relaciona valores a chaves. Portanto, é uma lista de valores que serão armazenados na memória. É um tipo de dado, assim como <i>integer</i>, <i>float</i>, <i>string</i> ou <i>boolean</i>, porém, ele pode armazenar mais de um valor relacionando-os a suas chaves. Resumindo, uma array é uma variável com a possibilidade de dentro dela possuir diversos valores, equivalente a um conceito de <b>vetor</b> ou <b>matriz</b>, que são conceitos mais complexos.</p>
 
-<h3>Experiência</h3>
+<p><b>O que é iteração?</b> Na programação, significa a repetição de uma ou mais ações. Cada iteração se refere a apenas uma instância da ação, ou seja, cada repetição possui uma ou mais iterações. Podemos considerar o PHP Foreach como um <b>laço de repetição que realiza uma iteração dentro de uma array</b> (for e while também utilizam de iterações).</p>
 
-- Usei pela primeira vez uma requisição AJAX para obter os resultados do cálculo VO2 Máx e o rendimento do usuário após inserir as informações necessárias no formulário.
+<p><b>O que é um laço de repetição?</b> Recurso que permite executar mais de uma vez trechos de código de acordo com uma condição. O PHP possui quatro estruturas de laço de repetição: <b>for</b>, <b>foreach</b>, <b>while</b>, <b>do-while</b>. Também é possível criar laços de repetição com as estruturas do condicional <i>if</i>. Comumente conhecidos como <b>Loop</b> ou <b>Looping</b>, também considerados como <i>estrtuturas de controle</i>.</p>
 
-- Refatoração de código e uso de variáveis com strings para evitar o desperdício.
-  
-- Primeiro projeto usando o modelo da empresa onde estou fazendo estágio.
-
-- Refatoração de código, diminuindo os `if-else` para um modelo de loop em PHP, usando o `foreach`.
+<p>Em uma sintaxe básica do PHP Foreach, para cada iteração do laço de repetição, o valor do elemento atual do Array é atribuído ao valor <b>$value</b>. Consequentemente o ponteiro da array é movido um a um, até atingir seu último elemento.</p>
 
 <br>
 
@@ -102,6 +110,8 @@
     <li><a href="https://blog.matheuscastiglioni.com.br/requisicoes-ajax-com-javascript/">Requisições Ajax Com Javascript</a> by <b>Matheus Castiglioni</b></li>
     <li><a href="https://www.hostinger.com.br/tutoriais/o-que-e-ajax">O Que é AJAX e Como Funciona?</a> by <b>Hostinger</b></li>
     <li><a href="https://youtu.be/gytFVt9Z7gk?si=HhOuaamZlVfA4wWX">Requisição Ajax com Jquery e PHP</a> by <b>To Codando</b></li>
+    <li><a href="https://www.homehost.com.br/blog/tutoriais/php/php-foreach/">PHP Foreach: Laço de iteração em arrays</a> by <b>Home Host</b></li>
+    <li><a href="https://www.w3schools.com/php/php_arrays_multidimensional.asp">PHP Multidimensional Arrays</a> by <b>W3 Schools</b></li>
 </ul>
 
 </div>
