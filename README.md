@@ -81,8 +81,6 @@
 - Usei pela primeira vez uma requisição AJAX para obter os resultados do cálculo VO2 Máx e o rendimento do usuário após inserir as informações necessárias no formulário.
 
 - Refatoração de código e uso de variáveis com strings para evitar o desperdício.
-  
-- Primeiro projeto usando o modelo da empresa onde estou fazendo estágio.
 
 <br>
 
