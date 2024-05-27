@@ -21,8 +21,8 @@
                 "male" => [
                     [13, 14, [2100, 1700, 1600, 1500]],
                     [15, 16, [2800, 2500, 2300, 2200]],
-                    [17, 20, [3000, 2700, 2500, 2300]],
-                    [21, 29, [2800, 2400, 2200, 1600]],
+                    [17, 19, [3000, 2700, 2500, 2300]],
+                    [20, 29, [2800, 2400, 2200, 1600]],
                     [30, 39, [2700, 2300, 1900, 1500]],
                     [40, 49, [2500, 2100, 1700, 1400]],
                     [50, PHP_INT_MAX, [2400, 2000, 1600, 1300]],
@@ -30,8 +30,8 @@
                 "female" => [
                     [13, 14, [2000, 1900, 1600, 1500]],
                     [15, 16, [2100, 2000, 1700, 1600]],
-                    [17, 20, [2300, 2100, 1800, 1700]],
-                    [21, 29, [2700, 2200, 1800, 1500]],
+                    [17, 19, [2300, 2100, 1800, 1700]],
+                    [20, 29, [2700, 2200, 1800, 1500]],
                     [30, 39, [2500, 2000, 1700, 1400]],
                     [40, 49, [2300, 1900, 1500, 1200]],
                     [50, PHP_INT_MAX, [2200, 1700, 1400, 1100]],
@@ -42,12 +42,12 @@
                 "Ótimo rendimento, parabéns!", 
                 "Bom rendimento, continue assim!", 
                 "Rendimento regular, dá para melhorar!", 
-                "Rendimento ruim, algo está errado.", 
+                "Seu rendimento está ruim, algo está errado.", 
                 "Rendimento péssimo, revise suas rotinas!"
             ];
             
             if (!isset($params[$genderValue])) {
-                return "Por favor, escolha um gênero.";
+                return "Escolha um gênero.";
             }
             
             foreach ($params[$genderValue] as $grupo) {
