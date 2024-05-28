@@ -33,18 +33,18 @@
 
 <h2>Template</h2>
 
-<img src="./assets/template/pagina-index.png" alt="Página index do cáculo de VO2 Máximo">
+<img src="./assets/template/index.png" alt="Página index do cáculo de VO2 Máximo">
 
 <h3>Output dos Resultados: </h3>
 <p>| Após o usuário inserir suas informações.</p>
 
-<img src="./assets/template/prototipo-1.png" alt="Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
+<img src="./assets/template/prototipo1.png" alt="Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
 
 <br>
 
 <p>| <b>Output Final após Alterações e Implementações</b></p>
 
-<img src="./assets/template/prototipo-2.png" alt="Protótipo 2 e final do - Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
+<img src="./assets/template/prototipo2.png" alt="Protótipo 2 e final do - Página index com o output do resultados após o usuário inserir suas informações e apertar no botão 'Enviar'">
 
 <br>
 
