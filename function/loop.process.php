@@ -1,9 +1,13 @@
 <?php
 
     if (isset($_GET) && $_SERVER["REQUEST_METHOD"] == "GET") {
-        $genderValue = $_GET['gender'];
-        $ageValue = (int)$_GET['age'];
-        $distanceMeter = (float)$_GET['meters'];
+        // $genderValue = $_GET['gender'];
+        // $ageValue = (int)$_GET['age'];
+        // $distanceMeter = (float)$_GET['meters'];
+
+        $genderValue = filter_input(INPUT_GET, 'gender', FILTER_SANITIZE_SPECIAL_CHARS);
+        $ageValue = filter_input(INPUT_GET, 'age', FILTER_VALIDATE_INT);
+        $distanceMeter = filter_input(INPUT_GET, 'meters', FILTER_VALIDATE_FLOAT);
 
         if ($distanceMeter) {
             $vo2max = ($distanceMeter - 504.1) / 44.9;
