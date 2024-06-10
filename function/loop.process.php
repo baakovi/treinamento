@@ -1,9 +1,9 @@
 <?php
 
     if (isset($_GET) && $_SERVER["REQUEST_METHOD"] == "GET") {
-        $genderValue = $_GET['gender'];
-        $ageValue = (int)$_GET['age'];
-        $distanceMeter = (float)$_GET['meters'];
+        $genderValue = filter_input(INPUT_GET, 'gender', FILTER_SANITIZE_SPECIAL_CHARS);
+        $ageValue = filter_input(INPUT_GET, 'age', FILTER_VALIDATE_INT);
+        $distanceMeter = filter_input(INPUT_GET, 'meters', FILTER_VALIDATE_FLOAT);
 
         if ($distanceMeter) {
             $vo2max = ($distanceMeter - 504.1) / 44.9;
@@ -39,15 +39,15 @@
             ];
 
             $resultInput = [
-                "Ótimo rendimento, parabéns!", 
-                "Bom rendimento, continue assim!", 
-                "Rendimento regular, dá para melhorar!", 
-                "Seu rendimento está ruim, algo está errado.", 
+                "Ótimo rendimento, parabéns!",
+                "Bom rendimento, continue assim!",
+                "Rendimento regular, dá para melhorar!",
+                "Seu rendimento está ruim, algo está errado.",
                 "Rendimento péssimo, revise suas rotinas!"
             ];
             
             if (!isset($params[$genderValue])) {
-                return "Escolha um gênero.";
+                echo "Escolha um gênero.";
             }
             
             foreach ($params[$genderValue] as $grupo) {
@@ -56,24 +56,24 @@
                 $distances = $grupo[2];
 
                 if ($ageValue >= $minAge && $ageValue <= $maxAge) {
-                    if ($distanceMeter >= $distances[0]) return $resultInput[0];
+                    if ($distanceMeter >= $distances[0]) { return $resultInput[0]; }
 
-                    elseif ($distanceMeter >= $distances[1]) return $resultInput[1];
+                    elseif ($distanceMeter >= $distances[1]) { return $resultInput[1]; }
 
-                    elseif ($distanceMeter >= $distances[2]) return $resultInput[2];
+                    elseif ($distanceMeter >= $distances[2]) { return $resultInput[2]; }
 
-                    elseif ($distanceMeter >= $distances[3]) return $resultInput[3];
+                    elseif ($distanceMeter >= $distances[3]) { return $resultInput[3]; }
 
-                    else return $resultInput[4];
+                    else { return $resultInput[4]; }
                 }
             }
 
-            return "Idade muito abaixo do mínimo!";
+            echo "Idade muito abaixo do mínimo!";
         }
 
-        $category = 
-            getResultLoop($ageValue, 
-                    $distanceMeter, 
+        $category =
+            getResultLoop($ageValue,
+                    $distanceMeter,
                     $genderValue);
 
         $resultOutput = [
@@ -84,5 +84,3 @@
         echo json_encode($resultOutput);
 
     }
-
-?>
