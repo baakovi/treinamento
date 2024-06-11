@@ -1,12 +1,13 @@
 :root{
   --azul : #0059aa;
+  --azul-claro: #007ACC;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
 }
 
 body {
@@ -188,7 +189,7 @@ main {
 }
 
 .form-control {
-  padding: 0 40px;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -234,11 +235,16 @@ html {
   font-size: 14px;
 }
 
+.result {
+  margin-right: 10px;
+}
+
 .result-input {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
   padding: 0;
-  margin-bottom: -20px;
+  margin: 0 0 8px 36px;
 }
 
 .card-body {
@@ -252,7 +258,18 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 40px 0 60px;
+  margin: 30px 0;
+}
+
+.card-body .download-button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--azul-claro);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow:2px 2px 6px 1px #c5c5c5;
 }
 
 .card-body.active {
@@ -310,21 +327,6 @@ html {
 
 .card-form input::placeholder{
   color: grey;
-}
-
-.card-body .button-click {
-  width: 80px;
-  height: 40px;
-  margin-left: 10px;
-  background-color: var(--azul);
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  color: #eee;
-  cursor: pointer;
-  box-shadow:3px 3px 7px 1px #ccc;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .novo{
