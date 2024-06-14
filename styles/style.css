@@ -1,13 +1,13 @@
 :root{
   --azul : #0059aa;
-  --azul-claro: #007ACC;
+  --azul-claro: #3d9bda;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
 body {
@@ -226,9 +226,8 @@ h1 {
 html {
   font-size: 62.5%;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background:  #0059aa;
-  font-family: sans-serif;
 }
 
 .input-text {
@@ -241,7 +240,7 @@ html {
 
 .result-input {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   padding: 0;
   margin: 0 0 8px 36px;
@@ -260,6 +259,19 @@ html {
   flex-direction: column;
   margin: 30px 0;
 }
+  
+.card-body input, .sex select {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  height: 40px;
+  margin-bottom: 2rem;
+  border: none;
+  border: 0.5px solid rgb(177, 177, 177);
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+}
 
 .card-body .download-button {
   width: 40px;
@@ -267,9 +279,10 @@ html {
   background-color: var(--azul-claro);
   outline: none;
   border: none;
-  border-radius: 50%;
+  border-radius: 10px;
+  padding-top: 4px;
   cursor: pointer;
-  box-shadow:2px 2px 6px 1px #c5c5c5;
+  box-shadow:2px 2px 4px 1px #dddddd;
 }
 
 .card-body.active {
@@ -310,19 +323,6 @@ html {
   justify-content: center;
   font-family: sans-serif;
   font-size: 50px;
-}
-
-.card-body input, .sex select {
-  background-color: transparent;
-  width: 100%;
-  outline: none;
-  height: 40px;
-  margin-bottom: 2rem;
-  border: none;
-  border: 0.5px solid rgb(177, 177, 177);
-  border-radius: 10px;
-  font-size: 16px;
-  text-align: center;
 }
 
 .card-form input::placeholder{
@@ -389,3 +389,45 @@ html {
   background-color: white;
   color: black;
 }
+
+
+/* Media Query */
+
+/* Extra large screens, TV */
+@media screen and (min-width: 1281px) {
+  /* Code . . . */
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* Code . . . */
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Code . . . */
+}
+
+
+/* Smartphone */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Code . . . */
+}
+
+
+/* Smaller smartphones */
+@media screen and (max-width: 480px) {
+  /* Code . . . */
+}
+
+/*
+  Ambos `@media screen` e `@media only screen` são usados para aplicar estilos com base nas características da tela, como tamanho, resolução e orientação. No entanto, existe uma pequena diferença entre os dois.
+
+  1. `@media screen`: Este é um tipo de regra de mídia que aplica os estilos especificados a qualquer dispositivo de saída, como uma tela de computador, TV ou tela de smartphone.
+
+  2. `@media only screen`: Esta regra de mídia é um pouco mais restrita. Ela especifica que os estilos só devem ser aplicados a dispositivos de saída que são telas, excluindo, por exemplo, impressoras. 
+
+  Portanto, enquanto ambos podem ser usados para definir estilos para telas, `@media only screen` é uma escolha mais precisa se você deseja garantir que os estilos sejam aplicados exclusivamente a dispositivos de saída de tela. No entanto, na prática, muitas vezes não faz diferença significativa, já que a maioria das regras de mídia é destinada a telas de qualquer maneira.
+*/

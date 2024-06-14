@@ -18,10 +18,10 @@ document.getElementById('form-get').addEventListener('submit', (e) => {
     fetch(`function/loop.process.php?age=${age}&gender=${gender}&meters=${meters}`)
     .then(response => response.json())
     .then(result => {
-        // document.getElementById('displayresult').value = result.resultVO2;
-        document.getElementById('result').innerHTML = `<input placeholder='VO₂ Máx ${result.resultVO2}" mL.kg.min-1' name="result" readonly>`;
-        document.getElementById('result-input').innerHTML = result.resultRend;
-        document.getElementById('result-input').style.color = result.resultRend;
+        document.getElementById('result').innerHTML = `<input placeholder='VO₂ Máx: ${result.resultVO2}" mL.kg.min-1' name="result" readonly>`;
+        document.getElementById('refresh-button').style.display = 'block';
+        document.getElementById('result-input').innerHTML = result.resultRend.msg;
+        document.getElementById('result-input').style.color = result.resultRend.color;
     })
 
     .catch(error => {

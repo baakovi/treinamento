@@ -39,29 +39,12 @@
             ];
 
             $resultInput = [
-                "Ótimo rendimento, parabéns!",
-                "Bom rendimento, continue assim!",
-                "Rendimento regular, dá para melhorar!",
-                "Seu rendimento está ruim, algo está errado.",
-                "Rendimento péssimo, revise suas rotinas!"
+                ["msg" => "Ótimo rendimento, parabéns!", "color" => "#0cca81"],
+                ["msg" => "Bom rendimento, continue assim!", "color" => "#4A90E2"],
+                ["msg" => "Rendimento regular, dá para melhorar!", "color" => "#b9de3d"],
+                ["msg" => "Seu rendimento está ruim, algo está errado.", "color" => "#F5A623"],
+                ["msg" => "Rendimento péssimo, revise suas rotinas.", "color" => "#e92034"]
             ];
-
-            $colorsInput = [
-                "#0cca81",
-                "#4A90E2",
-                "#ECE26D",
-                "#F5A623",
-                "#e92034"
-            ];
-
-            /*
-                Cores dos resultados
-                ÓTIMO - #0cca81
-                BOM - #4A90E2
-                REGULAR - #ECE26D
-                RUIM - #F5A623
-                PÉSSIMO - #e92034
-            */
             
             if (!isset($params[$genderValue])) {
                 echo "Escolha um gênero.";
@@ -75,27 +58,22 @@
                 if ($ageValue >= $minAge && $ageValue <= $maxAge) {
                     if ($distanceMeter >= $distances[0]) { 
                         return $resultInput[0];
-                        return $colorsInput[0];
                     }
 
                     elseif ($distanceMeter >= $distances[1]) {
                         return $resultInput[1];
-                        return $colorsInput[1];
                     }
 
                     elseif ($distanceMeter >= $distances[2]) {
                         return $resultInput[2];
-                        return $colorsInput[2];
                     }
 
                     elseif ($distanceMeter >= $distances[3]) {
                         return $resultInput[3];
-                        return $colorsInput[3];
                     }
 
                     else {
                         return $resultInput[4];
-                        return $colorsInput[4];
                     }
                 }
             }
