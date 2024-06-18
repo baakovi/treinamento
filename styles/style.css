@@ -395,7 +395,9 @@ html {
 
 /* Extra large screens, TV */
 @media screen and (min-width: 1281px) {
-  /* Code . . . */
+  .headline {
+    margin-bottom: 18px;
+  }
 }
 
 
@@ -413,13 +415,89 @@ html {
 
 /* Smartphone */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  /* Code . . . */
+  h1 {
+    font-size: 30px;
+  }
+
+  .sub-subtitulo {
+    width: 80%;
+    font-size: 12px;
+    text-align: start;
+  }
+
+  .subtitulo {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .card-body {
+    width: 460px;
+  }
+
+  .novo {
+    font-size: 18px;
+    width: 120px;
+  }
+
+  .result-input {
+    font-size: 16px;
+  }
+
+  .logoecliente img {
+    width: 80%;
+  }
 }
 
 
 /* Smaller smartphones */
 @media screen and (max-width: 480px) {
-  /* Code . . . */
+  html {
+    width: 100%;
+    height: 120vh;
+  }
+
+  .info-contact a, .info-contact p {
+    font-size: 8px;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    /* position: sticky; */
+  }
+
+  .input-text {
+    font-size: 13px;
+  }
+
+  .card-body {
+    height: 460px;
+    width: 300px;
+  }
+
+  .novo {
+    font-size: 16px;
+    width: 100px;
+    border-radius: 12px;
+  }
+
+  .result-input {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .sub-subtitulo {
+    width: 80%;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .logoecliente img {
+    width: 80%;
+  }
 }
 
 /*
