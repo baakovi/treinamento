@@ -7,7 +7,7 @@ function fecharMenu(){
 }
 
 function reloadPage(){
-    window.location.assign('index.html');
+    window.location.assign('https://ecliente5.com.br/calculo-vo2/');
 }
 
 document.getElementById('form-get').addEventListener('submit', (e) => {
